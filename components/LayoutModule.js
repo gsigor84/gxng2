@@ -12,7 +12,7 @@ const LayoutModule = ({children}) => {
   
 <link
             rel="IntegralCF-Bold"
-            href="/fonts/IntegralCF-Bold.ot"
+            href="/fonts/IntegralCF-Bold.otf"
             as="font"
             crossOrigin=""
           />
