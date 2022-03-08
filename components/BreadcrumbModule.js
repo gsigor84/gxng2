@@ -2,6 +2,7 @@ import React from 'react'
 import Breadcrumbs from '@mui/material/Breadcrumbs';
 import Link from '@mui/material/Link';
 import Grid from '@mui/material/Grid';
+import { Typography } from '@mui/material';
 
 
 function handleClick(event) {
@@ -15,9 +16,11 @@ const BreadcrumbModule = () => {
     <Grid container sx={{ justifyContent: 'flex-end' }}>
       
         <Grid item xs={12} md={7} >  
-      <Breadcrumbs aria-label="breadcrumb" color="white">
+      <Breadcrumbs aria-label="breadcrumb" sx={{color:'white'}}>
       <Link underline="hover"  href="/" className='p1'>
+        <Typography>
           Home
+          </Typography>
         </Link>
         <Link underline="hover"  href="/dashboard" className='p1' >
           DashBoard
