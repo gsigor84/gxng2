@@ -1,18 +1,4 @@
 
-
-  @font-face {
-  font-family: "IntegralCF-Bold"; 
-   src: url ("../asset/IntegralCF-Bold.otf") format("otf"); 
-   font-style: normal;
-   font-display: swap;
-}
-
-@font-face {
-font-family: "SpaceMono-Regular";
-src: url ("../asset/SpaceMono-Regular.ttf");
-font-style: normal;
-font-display: swap;
-}
 html,
 body {
   padding: 0;
@@ -74,4 +60,18 @@ padding: 2%;
   font-Family: 'SpaceMono-Regular';
   border-width: 2px;
  margin:0.5%
+}
+.logo{
+  font-Size:40px;
+  color:white;
+  font-Family:'Oswald';
+  -webkit-text-stroke: 2px white;
+}
+.take{
+  font-Size:40px;
+  color:white;
+  padding-Top:15%;
+  padding-Inline:15%;
+  font-Family:'Oswald';
+  -webkit-text-stroke: 2px white;
 }

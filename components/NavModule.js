@@ -9,7 +9,7 @@ const NavModule = () => {
     <Box>
         <Grid container >
         <Grid item xs={12} md={4} >
-        <p style={{fontSize:'40px',color:'white',fontFamily:"Oswald"}}>
+        <p className='logo'>
  GXNG
   </p>
   </Grid>
