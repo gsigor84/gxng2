@@ -7,7 +7,7 @@ import Head from 'next/head'
 
 const LayoutModule = ({children}) => {
   return (
-    <Box className='backGround' sx={{ flexGrow: 1}}>
+    <Box className='backGround' sx={{ flexGrow: 1,height:'1100px'}}>
 <Head>
     <link href="/static/styles/global.css" rel="stylesheet"/>
 </Head>
