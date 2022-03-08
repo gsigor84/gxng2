@@ -3,7 +3,6 @@ import Box from '@mui/material/Box';
 import Grid from '@mui/material/Grid';
 import Nav from './NavModule'
 import Head from 'next/head'
-import Link from "next/link";
 
 
 const LayoutModule = ({children}) => {
