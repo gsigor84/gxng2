@@ -16,38 +16,38 @@ const BreadcrumbModule = () => {
     <Grid container sx={{ justifyContent: 'flex-end' }}>
       
         <Grid item xs={12} md={7} >  
-      <Breadcrumbs aria-label="breadcrumb" sx={{color:'white'}}>
+     
       <Link underline="hover"  href="/" className='p1'>
         <Typography>
-          Home
+          Home /
           </Typography>
         </Link>
         <Link underline="hover"  href="/dashboard" className='p1' >
-          DashBoard
+          DashBoard /
         </Link>
         <Link
           underline="hover"
           href="/strength"
           className='p1'
         >
-          Strength
+          Strength /
         </Link>
         <Link
           underline="hover"
           href="/getting-started/installation/"
           className='p1'
         >
-          Functional
+          Functional /
         </Link>
         <Link
           underline="hover"
           href="/getting-started/installation/"
           className='p1'
         >
-          Blog
+          Blog /
         </Link>
         
-       </Breadcrumbs>
+      
       </Grid>
      
       </Grid>
