@@ -14,14 +14,12 @@ const LayoutModule = ({children}) => {
 <link
             rel="IntegralCF-Bold"
             href="/fonts/IntegralCF-Bold.otf"
-            as="font"
-            crossOrigin=""
+          
           />
              <link
             rel="SpaceMono-Regular"
             href="/fonts/SpaceMono-Regular.ttf"
-            as="font"
-            crossOrigin=""
+      
           />
 </Head>
 
