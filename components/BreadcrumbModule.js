@@ -5,10 +5,6 @@ import Grid from '@mui/material/Grid';
 import { Typography } from '@mui/material';
 
 
-function handleClick(event) {
-    event.preventDefault();
-    console.info('You clicked a breadcrumb.');
-  }
 
 const BreadcrumbModule = () => {
   return (
@@ -17,34 +13,31 @@ const BreadcrumbModule = () => {
       
         <Grid item xs={12} md={7} >  
      
-      <Link underline="hover"  href="/" className='p1'>
-        <Typography>
+      <Link underline="hover"  href="/">
+        <Typography className='p1'>
           Home /
-          </Typography>
+          </Typography >
         </Link>
-        <Link underline="hover"  href="/dashboard" className='p1' >
+        <Link underline="hover"  href="/dashboard"  >
+        <Typography className='p1'>
           DashBoard /
+          </Typography >
         </Link>
-        <Link
-          underline="hover"
-          href="/strength"
-          className='p1'
-        >
+        <Link  underline="hover"  href="/strength" >
+        <Typography className='p1'>
           Strength /
+          </Typography >
         </Link>
-        <Link
-          underline="hover"
-          href="/getting-started/installation/"
-          className='p1'
-        >
+        <Link underline="hover"href="/getting-started/installation/">
+        <Typography className='p1'>
           Functional /
+          </Typography >
         </Link>
         <Link
-          underline="hover"
-          href="/getting-started/installation/"
-          className='p1'
-        >
-          Blog /
+          underline="hover"  href="/getting-started/installation/" >
+           <Typography className='p1'>
+          Blog 
+          </Typography >
         </Link>
         
       
