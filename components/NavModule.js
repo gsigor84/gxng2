@@ -2,7 +2,7 @@ import React from 'react'
 import Box from '@mui/material/Box';
 import Grid from '@mui/material/Grid';
 import BreadcrumbModule from './BreadcrumbModule';
-
+import "@fontsource/work-sans"
 
 const NavModule = () => {
   return (
