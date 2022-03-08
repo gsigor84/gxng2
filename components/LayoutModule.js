@@ -9,7 +9,19 @@ const LayoutModule = ({children}) => {
   return (
     <Box className='backGround' sx={{ flexGrow: 1,height:'1100px'}}>
 <Head>
-    <link href="/styles/Home.module.css" rel="stylesheet"/>
+  
+<link
+            rel="IntegralCF-Bold"
+            href="/fonts/IntegralCF-Bold.ot"
+            as="font"
+            crossOrigin=""
+          />
+             <link
+            rel="SpaceMono-Regular"
+            href="/fonts/SpaceMono-Regular.ttf"
+            as="font"
+            crossOrigin=""
+          />
 </Head>
 
     <Grid container sx={{padding:'2%',height:'100%' }}>
