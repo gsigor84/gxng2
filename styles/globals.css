@@ -7,10 +7,7 @@ body {
   background-color: black;
 }
 
-a {
-  color: inherit;
-  text-decoration: none;
-}
+
 
 * {
   box-sizing: border-box;
@@ -28,7 +25,21 @@ a {
 .p1{
   font-family: 'Space Mono', monospace;
   color:white;
-  
+  padding-inline: 2%;
+  text-decoration: none;
+}
+
+a {
+  color:white;
+  text-decoration-line: none;
+  font-family: 'Space Mono', monospace;
+}
+a:link{
+  text-decoration: none!important;
+}
+a:hover {
+  color:white;
+  text-decoration: underline;
 }
 .center {
   text-align: center;
@@ -66,6 +77,12 @@ padding: 2%;
   color:white;
   font-Family:'Oswald';
   -webkit-text-stroke: 2px white;
+}
+.subTitle{
+  font-Size:20px;
+  color:white;
+  font-Family:'Oswald';
+
 }
 .take{
   font-Size:40px;

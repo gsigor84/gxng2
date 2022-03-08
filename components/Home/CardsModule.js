@@ -9,12 +9,12 @@ export default function CardsModule  ()  {
   return (
       <>
           
-        <Grid container spacing={4}>
+        <Grid container spacing={2}>
 
 
 
         <Grid item xs={12} md={12}>
-        <p style={{fontSize:'20px',color:'white',paddingBlock:'2%'}}>
+        <p className='subTitle'>
             FAMOUS WORKOUTS
         </p>
         </Grid>
