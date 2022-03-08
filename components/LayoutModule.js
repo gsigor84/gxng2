@@ -10,14 +10,14 @@ const LayoutModule = ({children}) => {
   return (
     <Box className='backGround' sx={{ flexGrow: 1,height:'1100px'}}>
 <Head>
-  
-<Link
+
+<link
             rel="IntegralCF-Bold"
             href="/fonts/IntegralCF-Bold.otf"
             as="font"
             crossOrigin=""
           />
-             <Link
+             <link
             rel="SpaceMono-Regular"
             href="/fonts/SpaceMono-Regular.ttf"
             as="font"
