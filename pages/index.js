@@ -6,7 +6,7 @@ export default function Home() {
 
   return (
    
-<div>
+
 <Grid container sx={{marginBottom:'30%'}}>
 
 <Grid item xs={3} md={12} >
@@ -18,7 +18,7 @@ export default function Home() {
 
 
 </Grid>
-</div>
+
  
   )
 }
