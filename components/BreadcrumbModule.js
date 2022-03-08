@@ -2,7 +2,7 @@ import React from 'react'
 import Breadcrumbs from '@mui/material/Breadcrumbs';
 import Link from '@mui/material/Link';
 import Grid from '@mui/material/Grid';
-import styles from '../styles/global.css'
+import styles from '../styles/Home.module.css'
 
 function handleClick(event) {
     event.preventDefault();
