@@ -1,9 +1,16 @@
+@font-face {
+  font-family: 'IntegralCF-Bold'; 
+   src:'../public/IntegralCF-Bold.otf'; 
+
+   font-family: 'SpaceMono-Regular';
+   src:'../SpaceMono-Regular.ttf';
+}
 html,
 body {
   padding: 0;
   margin: 0;
-  font-family: -apple-system, BlinkMacSystemFont, Segoe UI, Roboto, Oxygen,
-    Ubuntu, Cantarell, Fira Sans, Droid Sans, Helvetica Neue, sans-serif;
+  font-family: -apple-system,IntegralCF-Bold,SpaceMono-Regular;
+  background-color: black;
 }
 
 a {
@@ -13,4 +20,54 @@ a {
 
 * {
   box-sizing: border-box;
+}
+
+.backGround{
+  min-height: 100%;
+  background: url('/gymBackground.jpg');
+  width:100%;
+  height:100%; 
+
+ 
+
+}
+.p1{
+  font-family: 'SpaceMono-Regular';
+  color:white;
+  
+}
+.center {
+  text-align: center;
+
+}
+
+.border {
+  -webkit-text-stroke: 2px white; /* width and color */
+
+color: black;
+}
+
+.cardImg{
+  filter: opacity(80%);
+}
+.checkbox{
+  color:white;
+}
+.gridExe{
+padding: 2%;
+  width:500px;
+  background-color: black;
+  filter: opacity(90%);
+
+}
+
+.chip{
+  color:white; 
+  font-Family: 'SpaceMono-Regular';
+  border-width: 2px;
+ margin:0.5%
+}
+
+html, body {
+  overflow-x: hidden;
 }
