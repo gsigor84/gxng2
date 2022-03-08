@@ -12,12 +12,12 @@ const LayoutModule = ({children}) => {
 
 <link
             rel="IntegralCF-Bold"
-            href="/fonts/IntegralCF-Bold.otf"
+            href="../asset/IntegralCF-Bold.otf"
           
           />
              <link
             rel="SpaceMono-Regular"
-            href="/fonts/SpaceMono-Regular.ttf"
+            href="../asset/SpaceMono-Regular.ttf"
       
           />
 </Head>

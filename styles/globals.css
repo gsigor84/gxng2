@@ -1,15 +1,15 @@
 
 
   @font-face {
-  font-family: 'IntegralCF-Bold'; 
-   src: url ("/fonts/IntegralCF-Bold.otf"); 
+  font-family: "IntegralCF-Bold"; 
+   src: url ("../asset/IntegralCF-Bold.otf") format("otf"); 
    font-style: normal;
    font-display: swap;
 }
 
 @font-face {
-font-family: 'SpaceMono-Regular';
-src: url ("/fonts/SpaceMono-Regular.ttf");
+font-family: "SpaceMono-Regular";
+src: url ("../asset/SpaceMono-Regular.ttf");
 font-style: normal;
 font-display: swap;
 }
