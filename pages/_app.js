@@ -4,7 +4,7 @@ import Layout from '../components/LayoutModule'
 
 function MyApp({ Component, pageProps }) {
   return (
-    <Layout style={{ fontFamily: "IntegralCF-Bold.otf"}}>
+    <Layout >
   <Component {...pageProps} />
   </Layout>
   )
