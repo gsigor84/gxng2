@@ -1,3 +1,11 @@
+@font-face {
+  font-family: 'IntegralCF-Bold'; 
+   src:'../public/IntegralCF-Bold.otf'; 
+
+   font-family: 'SpaceMono-Regular';
+   src:'../SpaceMono-Regular.ttf';
+}
+
 .container {
   padding: 0 2rem;
 }

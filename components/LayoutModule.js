@@ -9,7 +9,7 @@ const LayoutModule = ({children}) => {
   return (
     <Box className='backGround' sx={{ flexGrow: 1,height:'1100px'}}>
 <Head>
-    <link href="/static/styles/global.css" rel="stylesheet"/>
+    <link href="/styles/Home.module.css" rel="stylesheet"/>
 </Head>
 
     <Grid container sx={{padding:'2%',height:'100%' }}>
