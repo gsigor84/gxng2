@@ -10,16 +10,9 @@ const LayoutModule = ({children}) => {
     <Box className='backGround' sx={{ flexGrow: 1,height:'1100px'}}>
 <Head>
 
-<link
-            rel="IntegralCF-Bold"
-            href="../asset/IntegralCF-Bold.otf"
-          
-          />
-             <link
-            rel="SpaceMono-Regular"
-            href="../asset/SpaceMono-Regular.ttf"
-      
-          />
+<link rel="preconnect" href="https://fonts.googleapis.com"/>
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin/>
+<link href="https://fonts.googleapis.com/css2?family=Oswald:wght@700&display=swap" rel="stylesheet"/>
 </Head>
 
     <Grid container sx={{padding:'2%',height:'100%' }}>
