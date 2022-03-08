@@ -151,4 +151,42 @@ padding: 2%;
     width: 100%;
     flex-direction: column;
   }
+
+  .p1{
+    font-family: 'SpaceMono-Regular';
+    color:white;
+    
+  }
+  .center {
+    text-align: center;
+  
+  }
+  
+  .border {
+    -webkit-text-stroke: 2px white; /* width and color */
+  
+  color: black;
+  }
+  
+  .cardImg{
+    filter: opacity(80%);
+  }
+  .checkbox{
+    color:white;
+  }
+  .gridExe{
+  padding: 2%;
+    width:500px;
+    background-color: black;
+    filter: opacity(90%);
+  
+  }
+  
+  .chip{
+    color:white; 
+    font-Family: 'SpaceMono-Regular';
+    border-width: 2px;
+   margin:0.5%
+  }
+  
 }
