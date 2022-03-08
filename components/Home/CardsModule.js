@@ -13,7 +13,7 @@ export default function CardsModule  ()  {
 
 
 
-        <Grid item xs={12} md={12}>  
+        <Grid item xs={12} md={12}>
         <p style={{fontSize:'20px',color:'white',paddingBlock:'2%'}}>
             FAMOUS WORKOUTS
         </p>

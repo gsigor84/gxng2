@@ -1,16 +1,14 @@
 
-@layer base{
 
   @font-face {
   font-family: 'IntegralCF-Bold'; 
    src: url ('IntegralCF-Bold.otf'); 
-
-   font-family: 'SpaceMono-Regular';
-   src: url ('/SpaceMono-Regular.ttf');
 }
 
+@font-face {
+font-family: 'SpaceMono-Regular';
+src: url ('/SpaceMono-Regular.ttf');
 }
-
 html,
 body {
   padding: 0;
