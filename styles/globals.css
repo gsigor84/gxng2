@@ -1,3 +1,7 @@
+@import url('https://fonts.googleapis.com/css2?family=Oswald:wght@700&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Montserrat:wght@800&display=swap');
+/* From Public Directory */
+
 
 html,
 body {
@@ -118,5 +122,17 @@ padding: 2%;
     color:white
   
   }
+  .center {
+    text-align: left;
+  padding-bottom: 10%;
+  background-image: url('/back2.jpg');
+  background-position: right;
+  
+   /* Center and scale the image nicely */
+  
+   background-repeat: no-repeat;
+   background-size: 60%;
+  }
+  
   
 }
