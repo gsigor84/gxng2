@@ -61,7 +61,7 @@ padding: 2%;
 
 .chip{
 
-  font-Family: 'SpaceMono-Regular';
+  font-Family: 'Space Mono';
 
  margin:0.5%
 }
@@ -72,7 +72,7 @@ padding: 2%;
 }
 .subTitle{
   font-Size:20px;
-  font-Family:'SpaceMono-Regular';
+  font-Family:''Space Mono'';
   color: black;
   text-decoration: none;
   text-decoration-line: none;
@@ -91,7 +91,7 @@ padding: 2%;
   padding-Top:10%;
   padding-Inline:2%;
   padding-right: 55%;
-  font-Family:'SpaceMono-Regular';
+  font-Family:'Space Mono';
   color:white
 
 }
@@ -103,7 +103,7 @@ padding: 2%;
   }
   .subTitle{
     font-Size:20px;
-    font-Family:'SpaceMono-Regular';
+    font-Family:'Space Mono';
 
     text-decoration-line: none;
   }
@@ -120,7 +120,7 @@ padding: 2%;
     padding-Top:10%;
     padding-Inline:2%;
     padding-right: 55%;
-    font-Family:'SpaceMono-Regular';
+    font-Family:'Space Mono';
     color:white
   
   }
