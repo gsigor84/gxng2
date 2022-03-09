@@ -20,7 +20,7 @@ const index = () => {
   <Card sx={{ maxWidth: 345,boxShadow: "none" }}>
     <CardActionArea>
 <Link   href={muscle.link} className='subTitle'  > 
-
+<a  className='subTitle' >
       <CardMedia
         component="img"
         height="140"
@@ -34,7 +34,7 @@ const index = () => {
          {muscle.title}
          </Typography>
      
-      </CardContent>  </Link>
+      </CardContent> </a> </Link>
     </CardActionArea>
 </Card>
 </Grid>
