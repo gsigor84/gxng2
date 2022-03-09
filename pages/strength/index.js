@@ -19,8 +19,8 @@ const index = () => {
 <Grid item xs={12} md={4} key={index} > 
   <Card sx={{ maxWidth: 345,boxShadow: "none" }}>
     <CardActionArea>
-<Link   href={muscle.link}  > 
-<a  className='subTitle' >
+<Link   href={muscle.link} color="inherit" underline="hover"  > 
+
       <CardMedia
         component="img"
         height="140"
@@ -30,11 +30,11 @@ const index = () => {
       />
       <CardContent> 
         
-        <Typography className='subTitle' gutterBottom component="div"> 
+        <Typography  gutterBottom component="div"> 
          <span className='subTitle'>{muscle.title}</span>
          </Typography>
      
-      </CardContent> </a> </Link>
+      </CardContent>  </Link>
     </CardActionArea>
 </Card>
 </Grid>

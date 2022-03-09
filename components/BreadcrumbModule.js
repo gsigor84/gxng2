@@ -12,7 +12,7 @@ const BreadcrumbModule = () => {
     <Grid container className='bread' sx={{justifyContent: 'end'}}>
       
       <Breadcrumbs aria-label="breadcrumb">
-  <Link  sx ={{textDecorationLine: 'none'}}color="inherit" href="/">
+  <Link  sx ={{textDecorationLine: 'none'}} color="inherit" href="/">
   Home
   </Link>
   <Link   underline="hover" color="inherit" href="/dashboard" >
