@@ -19,7 +19,7 @@ const index = () => {
 <Grid item xs={12} md={4} key={index} > 
   <Card sx={{ maxWidth: 345,boxShadow: "none" }}>
     <CardActionArea>
-<Link   href={muscle.link} className='subTitle'  > 
+<Link   href={muscle.link}  > 
 <a  className='subTitle' >
       <CardMedia
         component="img"
@@ -31,7 +31,7 @@ const index = () => {
       <CardContent> 
         
         <Typography className='subTitle' gutterBottom component="div"> 
-         {muscle.title}
+         <span className='subTitle'>{muscle.title}</span>
          </Typography>
      
       </CardContent> </a> </Link>
