@@ -9,7 +9,7 @@ export default function Home() {
 
 <Grid container sx={{marginBottom:'30%'}}>
 
-<Grid item xs={3} md={12} >
+<Grid item xs={12} md={12} >
 <HomeP/>
 </Grid>
 <Grid item xs={12} md={12} >

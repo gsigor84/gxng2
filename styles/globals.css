@@ -4,7 +4,6 @@ body {
   padding: 0;
   margin: 0;
   font-family: -apple-system,IntegralCF-Bold,SpaceMono-Regular;
-  background-color: black;
 }
 
 
@@ -15,7 +14,6 @@ body {
 
 .backGround{
   min-height: 100%;
-  background: url('/gymBackground.jpg');
   width:100%;
   height:100%; 
 
@@ -24,40 +22,24 @@ body {
 }
 .p1{
   font-family: 'Space Mono', monospace;
-  color:white;
   padding-inline: 2%;
   text-decoration: none;
 }
 
 a {
-  color:white;
+
   text-decoration-line: none;
   font-family: 'Space Mono', monospace;
 }
-a:link{
-  text-decoration: none!important;
-}
-a:hover {
-  color:white;
-  text-decoration: underline;
-}
 .center {
   text-align: center;
-
-}
-
-.border {
-  -webkit-text-stroke: 2px white; /* width and color */
-
-color: black;
+padding-bottom: 10%;
 }
 
 .cardImg{
   filter: opacity(80%);
 }
-.checkbox{
-  color:white;
-}
+
 .gridExe{
 padding: 2%;
   width:500px;
@@ -67,28 +49,33 @@ padding: 2%;
 }
 
 .chip{
-  color:white; 
+
   font-Family: 'SpaceMono-Regular';
-  border-width: 2px;
+
  margin:0.5%
 }
 .logo{
   font-Size:40px;
-  color:white;
-  font-Family:'Oswald';
-  -webkit-text-stroke: 2px white;
+  font-Family:'Montserrat', sans-serif;
+
 }
 .subTitle{
   font-Size:20px;
-  color:white;
-  font-Family:'Oswald';
+  font-Family:'Montserrat', sans-serif;
+  color: black;
+  text-decoration: none;
 
 }
 .take{
   font-Size:40px;
-  color:white;
   padding-Top:15%;
   padding-Inline:15%;
-  font-Family:'Oswald';
-  -webkit-text-stroke: 2px white;
+  font-Family:'Montserrat', sans-serif;
+}
+
+@media only screen and (max-width: 600px) {
+ .bread{
+  justify-Content: center;
+
+  }
 }

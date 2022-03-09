@@ -1,87 +1,36 @@
 import React from 'react'
 import Link from '@mui/material/Link';
 import Grid from '@mui/material/Grid';
-import { Typography } from '@mui/material';
+import Typography from '@mui/material/Typography';
+import Breadcrumbs from '@mui/material/Breadcrumbs';
 
 
 
 const BreadcrumbModule = () => {
   return (
     
-    <Grid container sx={{justifyContent: 'end'}}>
+    <Grid container className='bread' sx={{justifyContent: 'end'}}>
       
-      
-      <Link   href="/" >
-        
- 
-          <a>
-          Home
-        </a>
-   
- 
-        </Link>
-       
-
-        <Typography className='p1'>
- /
-        </Typography>
-       
+      <Breadcrumbs aria-label="breadcrumb">
+  <Link  sx ={{textDecorationLine: 'none'}}color="inherit" href="/">
+  Home
+  </Link>
+  <Link   underline="hover" color="inherit" href="/dashboard" >
+  DashBoard
+  </Link>
+  <Link   underline="hover" color="inherit" href="/strength" >
+  Strength
+  </Link>
+  <Link   underline="hover" color="inherit" href="/" >
+  Functional
+  </Link>
+  <Link  underline="hover" color="inherit" href="/" >
+  Blog 
+  </Link>
   
 
-        <Link  href="/dashboard"  >
-        
-     
-          <a>
-          DashBoard
-           </a>
-      
-         
-        </Link>
-     
-      
-        <Typography className='p1'>
- /
-        </Typography>
+</Breadcrumbs>
 
-   
-        <Link  href="/strength" >
-        
-        
-          <a>
-        Strength
-         </a>
-   
-         
-        </Link>
- 
-      
-        <Typography className='p1'>
- /
-        </Typography>
-       
-
-      
-        <Link href="/getting-started/installation/">
-        <a>
-
-        Functional
-
-        </a>
-        </Link>
-  
-      
-        <Typography className='p1'>
- /
-        </Typography>
-      
-      
-        <Link   href="/getting-started/installation/" >
-        <a>
-
-          Blog 
-       
-          </a>
-        </Link>
   
   
       </Grid>

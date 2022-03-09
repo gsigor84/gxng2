@@ -9,12 +9,12 @@ const Reps =()=>{
         <Grid item xs={12} md={12}  >
         <Stack direction="row" spacing={2}>
         <Grid item xs={8} md={12}>
-     <Chip label="10kg" variant="outlined" className='chip' />
-     <Chip label="10kg" variant="outlined" className='chip' />
-     <Chip label="20kg" variant="outlined" className='chip' />
-     <Chip label="20kg" variant="outlined" className='chip' />
-     <Chip label="30kg" variant="outlined" className='chip' />
-     <Chip label="30kg" variant="outlined" className='chip' />
+     <Chip label="10kg" abel="Chip Filled" className='chip' />
+     <Chip label="10kg" abel="Chip Filled" className='chip' />
+     <Chip label="20kg" abel="Chip Filled" className='chip' />
+     <Chip label="20kg" abel="Chip Filled" className='chip' />
+     <Chip label="30kg" abel="Chip Filled" className='chip' />
+     <Chip label="30kg" abel="Chip Filled" className='chip' />
      </Grid>
    </Stack>
    </Grid>
@@ -26,7 +26,7 @@ const Reps =()=>{
 const LayoutModule = ({exes}) => {
 
   return (
-    <Grid container sx={{marginRight:'2%',background:'black',padding:'2%'}}>
+    <Grid container sx={{marginRight:'2%',padding:'2%'}}>
 
 {exes.map(function (chest,index) {
                 return(

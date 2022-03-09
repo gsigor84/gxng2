@@ -5,6 +5,7 @@ import CardMedia from '@mui/material/CardMedia';
 import { CardActionArea } from '@mui/material';
 import Grid from '@mui/material/Grid';
 import Link from '@mui/material/Link';
+import Typography from '@mui/material/Typography';
 
 const index = () => {
   
@@ -16,8 +17,10 @@ const index = () => {
           return(
 
 <Grid item xs={12} md={4} key={index} > 
-  <Card sx={{ maxWidth: 345, backgroundColor:'black' }}>
+  <Card sx={{ maxWidth: 345,boxShadow: "none" }}>
     <CardActionArea>
+<Link   href={muscle.link} className='subTitle'  > 
+
       <CardMedia
         component="img"
         height="140"
@@ -25,13 +28,13 @@ const index = () => {
         alt="green iguana"
       className='cardImg'
       />
-      <CardContent> <Link underline="hover"  href={muscle.link} style={{ textDecoration: 'none' }} > 
-      <p  style={{fontSize:'20px',color:'white',fontFamily: 'IntegralCF-Bold'}}>
+      <CardContent> 
         
+        <Typography className='subTitle' gutterBottom variant="h5" component="div"> 
          {muscle.title}
-         
-       </p></Link>
-      </CardContent>
+         </Typography>
+     
+      </CardContent>  </Link>
     </CardActionArea>
 </Card>
 </Grid>
@@ -46,24 +49,24 @@ const index = () => {
 const items = [
     {
       img: '/stars/Larry-Wheels.jpeg',
-      title: 'chest',
+      title: 'CHEST',
       link:'/strength/chest'
     },
     {
       img: '/stars/the_rock.jpeg',
-      title: 'back',
+      title: 'BACK',
     },
     {
         img: '/stars/panda.jpeg',
-        title: 'shoulder',
+        title: 'SHOULDER',
       },
       {
         img: '/stars/John_Cena.jpg',
-        title: 'legs',
+        title: 'LEGS',
       },
       {
         img: '/stars/Roman_Reigns.jpg',
-        title: 'arms',
+        title: 'ARMS',
       },
 ];
 

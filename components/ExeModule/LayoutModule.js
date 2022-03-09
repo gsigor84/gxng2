@@ -8,20 +8,20 @@ const LayoutModule = ({exes}) => {
   console.log(exes)
   return (
     
-    <Grid container sx={{marginRight:'2%',background:'black',padding:'2%'}}>
+    <Grid container sx={{marginRight:'2%',padding:'2%'}}>
      
     {exes.map(function (chest,index) {
                 return(
                   <Grid container key={index} >
     <Grid item xs={12} md={12} >
-     <p  style={{fontSize:'20px',color:'white',fontFamily: 'IntegralCF-Bold'}}>
-        chest
+     <p  style={{fontSize:'20px',fontFamily: 'Montserrat'}}>
+       CHEST
          </p>
          </Grid>
 
 
          <Grid item xs={12} md={4} >
-     <p  style={{fontSize:'20px',color:'white',fontFamily: 'IntegralCF-Bold'}}>
+     <p  className='subTitle'>
         Upper Section
          </p>
         
