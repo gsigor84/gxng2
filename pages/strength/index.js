@@ -26,11 +26,11 @@ const index = () => {
         height="140"
         image={muscle.img}
         alt="green iguana"
-      className='cardImg'
+   
       />
       <CardContent> 
         
-        <Typography className='subTitle' gutterBottom variant="h5" component="div"> 
+        <Typography className='subTitle' gutterBottom component="div"> 
          {muscle.title}
          </Typography>
      
