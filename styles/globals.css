@@ -84,7 +84,9 @@ padding: 2%;
   
   }
   a {
-
+    font-Size:20px;
+    font-Family:'Montserrat', sans-serif;
+    color: black;
     text-decoration-line: none;
     font-family: 'Space Mono', monospace;
   }
