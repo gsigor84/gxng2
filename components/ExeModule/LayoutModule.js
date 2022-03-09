@@ -14,7 +14,7 @@ const LayoutModule = ({exes}) => {
                 return(
                   <Grid container key={index} >
     <Grid item xs={12} md={12} >
-     <p  style={{fontSize:'20px',fontFamily: 'Montserrat'}}>
+     <p className='subTitle'>
        CHEST
          </p>
          </Grid>

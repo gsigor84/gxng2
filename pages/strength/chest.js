@@ -16,7 +16,7 @@ export async function getServerSideProps() {
     const res = await fetch(`${API_URL}/chests`)
     const exes = await res.json()
 
-    console.log(exes)
+  
 
     return{
         props: {exes:exes.slice(-1)}
