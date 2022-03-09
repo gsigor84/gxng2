@@ -83,4 +83,9 @@ padding: 2%;
     text-decoration: none;
   
   }
+  a {
+
+    text-decoration-line: none;
+    font-family: 'Space Mono', monospace;
+  }
 }
