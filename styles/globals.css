@@ -108,4 +108,15 @@ padding: 2%;
     text-decoration-line: none;
     font-family: 'Space Mono', monospace;
   }
+
+  .take{
+    font-Size:40px;
+    padding-Top:10%;
+    padding-Inline:2%;
+    padding-right: 55%;
+    font-Family:'SpaceMono-Regular';
+    color:white
+  
+  }
+  
 }
