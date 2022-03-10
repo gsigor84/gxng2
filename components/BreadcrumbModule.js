@@ -22,7 +22,7 @@ const BreadcrumbModule = () => {
   }
   const strength= {
     color:router.asPath === '/strength'  ?    'grey'  : 'black',
-    textDecoration: router.asPath === '/strength'  ? 'none' : 'underline',
+    textDecoration: router.asPath === '/strength' ? 'none' : 'underline',
 
   }
   const functional= {
@@ -38,7 +38,7 @@ const BreadcrumbModule = () => {
 
 
 
-  console.log(router)
+  
   return (
     
     <Grid container className='bread' sx={{justifyContent: 'end'}}>

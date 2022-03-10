@@ -23,12 +23,25 @@ const Reps =()=>{
 
 
 
-const LayoutModule = ({exes}) => {
-
-  return (
+const LayoutModule = ({chests,backs}) => {
+ 
+ console.log(backs)
+   return (
     <Grid container sx={{marginRight:'2%',padding:'2%'}}>
 
-{exes.map(function (chest,index) {
+       {backs.length > 5  ? <div>
+       {backs.map(function (back,index) {
+return(
+
+         <p key={index}> {back.pull.Hammer} {back.pull.ReverseCloseGrip}  </p>
+
+)
+       })}
+       </div>
+       
+      :<p>No back exe</p> }
+
+{chests.map(function (chest,index) {
                 return(
                 <Grid container key={index} >
 

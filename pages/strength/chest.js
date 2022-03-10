@@ -3,23 +3,24 @@ import {API_URL} from '@/config/index'
 
 import Exe from 'components/ExeModule/LayoutModule'
 
-const chest = ({exes}) => {
+const chest = ({chests}) => {
   return (
 
 <>
-<Exe exes={exes}  />
+<Exe chests={chests}  />
 </>
   )
 }
 
-export async function getServerSideProps() {
+export async function getStaticProps() {
     const res = await fetch(`${API_URL}/chests`)
-    const exes = await res.json()
+    const chests = await res.json()
 
   
 
     return{
-        props: {exes:exes.slice(-1)}
+        props: {chests:chests.slice(-1)},
+     
      
     }
 

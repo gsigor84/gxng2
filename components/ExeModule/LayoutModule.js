@@ -4,13 +4,13 @@ import Grid from '@mui/material/Grid';
 
 
 
-const LayoutModule = ({exes}) => {
-  console.log(exes)
+const LayoutModule = ({chests}) => {
+
   return (
     
     <Grid container sx={{marginRight:'2%',padding:'2%'}}>
      
-    {exes.map(function (chest,index) {
+    {chests.map(function (chest,index) {
                 return(
                   <Grid container key={index} >
     <Grid item xs={12} md={12} >
