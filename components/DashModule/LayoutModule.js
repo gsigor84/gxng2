@@ -6,18 +6,10 @@ import Stack from '@mui/material/Stack';
 
 const Reps =()=>{
     return(
-        <Grid item xs={12} md={12}  >
-        <Stack direction="row" spacing={2}>
-        <Grid item xs={8} md={12}>
-     <Chip label="10kg" abel="Chip Filled" className='chip' />
-     <Chip label="10kg" abel="Chip Filled" className='chip' />
-     <Chip label="20kg" abel="Chip Filled" className='chip' />
-     <Chip label="20kg" abel="Chip Filled" className='chip' />
-     <Chip label="30kg" abel="Chip Filled" className='chip' />
-     <Chip label="30kg" abel="Chip Filled" className='chip' />
-     </Grid>
-   </Stack>
-   </Grid>
+  
+     
+     <Chip label="5 sets, 12-10 reps" abel="Chip Filled" className='chip' />
+
     )
 }
 
@@ -43,66 +35,152 @@ return(
 
 {chests.map(function (chest,index) {
                 return(
-                <Grid container key={index} >
-
-                     <Grid item xs={12} md={12}  >
-     <p  className='p1'>
+                <div key={index}>
+                <Grid container  >
+{chest.upper.bench ?  <>
+                     <Grid item xs={12} md={4} >
+     <span  className='p1'>
         {chest.upper.bench}
-         </p>
+         </span>
+         </Grid>
+         
+        
+         <Grid item xs={12} md={8} >
 <Reps/>
-        
-     <p  className='p1'>
+</Grid>
+</> : null}
+
+{chest.upper.machine ?  <>
+<Grid item xs={12} md={4} >
+     <span  className='p1'>
         {chest.upper.machine}
-         </p>
+         </span>
+         </Grid>
+         <Grid item xs={12} md={8} >
          <Reps/>
-         <p  className='p1'>
+         </Grid>
+         </> : null}
+
+         {chest.upper.fly ?  <>
+         <Grid item xs={12} md={4} >
+         <span  className='p1'>
         {chest.upper.fly}
-         </p>
+         </span>
+         </Grid>
+         <Grid item xs={12} md={8} >
+         <Reps/>
+         </Grid>
+         </> : null}
 
-         <p  className='p1'>
+ {chest.upper.pushups ?  <>
+         <Grid item xs={12} md={4} >
+         <span  className='p1'>
         {chest.upper.pushups}
-         </p>
+         </span>
+             </Grid>
+         <Grid item xs={12} md={8} >
+         <Reps/>
         </Grid>
-
-        <Grid item xs={12} md={12}  >
-     <p  className='p1'>
+      
+        </> : null}
+       
+        {chest.middle.bench ?  <>
+        <Grid item xs={12} md={4}  >
+        <span  className='p1'>
         {chest.middle.bench}
-         </p>
-        
-     <p  className='p1'>
+        </span>
+        </Grid>
+        <Grid item xs={12} md={8} >
+         <Reps/>
+        </Grid>
+        </> : null}
+
+        {chest.middle.machine ?  <>
+
+        <Grid item xs={12} md={4}  >
+         <span  className='p1'>
         {chest.middle.machine}
-         </p>
+        </span>
+        </Grid>
+        <Grid item xs={12} md={8} >
+         <Reps/>
+        </Grid>
+        </> : null}
 
-         <p  className='p1'>
+        {chest.middle.fly ?  <>
+     
+        <Grid item xs={12} md={4} >
+         <span  className='p1'>
         {chest.middle.fly}
-         </p>
+        </span>
+</Grid>
+<Grid item xs={12} md={8} >
+         <Reps/>
+        </Grid>
+</> : null}
 
-         <p  className='p1'>
+{chest.middle.pushups ?  <>
+        <Grid item xs={12} md={4} >
+         <span  className='p1'>
         {chest.middle.pushups}
-         </p>
+        </span>
         </Grid>
-
-        <Grid item xs={12} md={12}  >
-     <p  className='p1'>
-        {chest.lower.bench}
-         </p>
+        <Grid item xs={12} md={8} >
+         <Reps/>
+        </Grid>
         
-     <p  className='p1'>
-        {chest.lower.machine}
-         </p>
+        </> : null}
 
-         <p  className='p1'>
-        {chest.lower.fly}
-         </p>
-
-         <p  className='p1'>
-        {chest.lower.pushups}
-         </p>
+        {chest.lower.bench ?  <>
+        <Grid item xs={12} md={4}  >
+        <span  className='p1'>
+        {chest.lower.bench}
+        </span>
         </Grid>
+        <Grid item xs={12} md={8} >
+         <Reps/>
+        </Grid>
+        </> : null}
+        
+        {chest.lower.machine ?  <>
+        <Grid item xs={12} md={4}  >
+         <span  className='p1'>
+        {chest.lower.machine}
+        </span>
+        </Grid>
+        <Grid item xs={12} md={8} >
+         <Reps/>
+        </Grid>
+        </> : null}
+        
+        {chest.lower.fly ?  <>
+        <Grid item xs={12} md={4}  >
+         <span  className='p1'>
+        {chest.lower.fly}
+        </span>
+         </Grid>
+         <Grid item xs={12} md={8} >
+          <Reps/>
+         </Grid>
+         </> : null}
+
+         {chest.lower.pushups ?  <>
+         <Grid item xs={12} md={4}  >
+         <span  className='p1'>
+        {chest.lower.pushups}
+        </span>
+         </Grid>
+         <Grid item xs={12} md={8} >
+          <Reps/>
+         </Grid>
+         </> : null}
+
          
          </Grid>
-
          
+       
+
+         </div>
 
                 )
 })}

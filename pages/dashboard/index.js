@@ -13,7 +13,7 @@ const index = ({chests,backs}) => {
   )
 }
 
-export async function getServerSideProps() {
+export async function getStaticProps() {
     const res1 = await fetch(`${API_URL}/chests`)
     const chests = await res1.json()
 
