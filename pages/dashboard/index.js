@@ -19,7 +19,8 @@ export async function getStaticProps() {
 
 
     return{
-        props: {chests:chests.slice(-1)}
+        props: {chests:chests.slice(-1)},
+        revalidate:1,
      
         
      
