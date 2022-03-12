@@ -1,7 +1,8 @@
 import React from 'react'
 import Grid from '@mui/material/Grid';
 import Chip from '@mui/material/Chip';
-import Stack from '@mui/material/Stack';
+import Box from '@mui/material/Box';
+
 
 
 const Reps =()=>{
@@ -16,27 +17,15 @@ const Reps =()=>{
 
 
 const LayoutModule = ({chests,backs}) => {
- 
- console.log(backs)
+
    return (
-    <Grid container sx={{marginRight:'2%',padding:'2%'}}>
+        <Box sx={{ width: '100%' }}>
 
-       {backs.length > 5  ? <div>
-       {backs.map(function (back,index) {
-return(
-
-         <p key={index}> {back.pull.Hammer} {back.pull.ReverseCloseGrip}  </p>
-
-)
-       })}
-       </div>
-       
-      :<p>No back exe</p> }
 
 {chests.map(function (chest,index) {
                 return(
                 <div key={index}>
-                <Grid container  >
+                <Grid container   >
 {chest.upper.bench ?  <>
                      <Grid item xs={12} md={4} >
      <span  className='p1'>
@@ -185,7 +174,7 @@ return(
                 )
 })}
 
-        </Grid>
+        </Box>
   )
 }
 
