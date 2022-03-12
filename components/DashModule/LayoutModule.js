@@ -16,8 +16,8 @@ const Reps =()=>{
 
 
 
-const LayoutModule = ({chests,backs}) => {
-
+const LayoutModule = ({chests}) => {
+console.log(chests)
    return (
         <Box sx={{ width: '100%' }}>
 
