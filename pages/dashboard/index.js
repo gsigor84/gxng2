@@ -13,14 +13,14 @@ const index = ({chests}) => {
   )
 }
 
-export async function getStaticProps() {
+export async function getServerSideProps() {
     const res1 = await fetch(`${API_URL}/chests`)
     const chests = await res1.json()
 
 
     return{
-        props: {chests:chests.slice(-1)},
-        revalidate:1,
+        props: {chests:chests.slice(-1)}
+       
      
         
      
