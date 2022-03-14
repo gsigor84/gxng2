@@ -142,7 +142,7 @@ const FunctionalModule = () => {
                             </p>
 
                             <p>
-                            <input  type="checkbox" name={'LUNGEOVERHEAD'} value={'LUNGE W/ OVERHEAD PRESS'} onChange={handleInputChange} onChange={handleInputChange} />
+                            <input  type="checkbox" name={'LUNGEOVERHEAD'} value={'LUNGE W/ OVERHEAD PRESS'} onChange={handleInputChange}  />
                             <label className='p1'>
                             LUNGE W/ OVERHEAD PRESS
                             </label>
