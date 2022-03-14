@@ -2,7 +2,7 @@ import React from 'react'
 import FunctionalLayout from '../../components/DashModule/FunctionalsModule'
 import {API_URL} from '@/config/index'
 
-const chest = ({functionals}) => {
+const functionals = ({functionals}) => {
   return (
    <FunctionalLayout 
    
@@ -28,4 +28,4 @@ export async function getServerSideProps() {
 
 }
 
-export default chest
+export default functionals
