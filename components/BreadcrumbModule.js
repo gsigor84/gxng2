@@ -56,10 +56,6 @@ const BreadcrumbModule = () => {
   <Link  style={functional}    color="inherit"className='bread' href="/" >
   Functional
   </Link>
-  <Link  style={blog}   color="inherit" className='bread' href="/" >
-  Blog 
-  </Link>
-  
 
 </Breadcrumbs>
 
