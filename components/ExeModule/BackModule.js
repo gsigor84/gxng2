@@ -122,14 +122,14 @@ const BackModule = () => {
          </p>
         
  <p>
-                            <input  type="checkbox" ype="checkbox" name={'Hammer'} value={'Hammer Strength Reverse-Grip Lat Pulldown'} onChange={handleInputChange}  />
+                            <input  type="checkbox"  name={'Hammer'} value={'Hammer Strength Reverse-Grip Lat Pulldown'} onChange={handleInputChange}  />
                             <label className='p1' >
                             Hammer Strength Reverse-Grip Lat Pulldown
                             </label>
                           </p>
 
                           <p>
-                            <input  type="checkbox" type="checkbox" name={'WideGrip'} value={'Wide-Grip Lat Pulldown'} onChange={handleInputChange} />
+                            <input  type="checkbox" name={'WideGrip'} value={'Wide-Grip Lat Pulldown'} onChange={handleInputChange} />
                             <label className='p1'>
                             Wide-Grip Lat Pulldown
                             </label>

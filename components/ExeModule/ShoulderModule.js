@@ -133,7 +133,7 @@ const LayoutModule = () => {
                           </p>
 
                           <p>
-                            <input  type="checkbox" type="checkbox" name={'FrontArmRaises'} value={'Front Arm Raises (Dumbbell)'} onChange={handleInputChange}  />
+                            <input  type="checkbox"  name={'FrontArmRaises'} value={'Front Arm Raises (Dumbbell)'} onChange={handleInputChange}  />
                             <label className='p1'>
                             Front Arm Raises (Dumbbell)
                             </label>
@@ -156,7 +156,7 @@ const LayoutModule = () => {
                             </p>
 
                             <p>
-                            <input  type="checkbox" className={styles.tick} type="checkbox" name={'UprightRowsCable'} value={'Upright Rows (Cable)'} onChange={handleInputChange}/>
+                            <input  type="checkbox" className={styles.tick}  name={'UprightRowsCable'} value={'Upright Rows (Cable)'} onChange={handleInputChange}/>
                             <label className='p1'>
                             Upright Rows (Cable)
                             </label>
@@ -171,7 +171,7 @@ const LayoutModule = () => {
 
 
          <p>
-         <input type="checkbox" name={'BarbellRow'} value={'Barbell Row'} name={'ArmCable'} value={'Arm Cable Side Raise'} onChange={handleInputChange2} />
+         <input type="checkbox" name={'ArmCable'} value={'Arm Cable Side Raise'} onChange={handleInputChange2} />
                             <label className='p1' >
                             Arm Cable Side Raise
                             </label>
