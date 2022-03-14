@@ -53,7 +53,7 @@ const BreadcrumbModule = () => {
   <Link  style={strength}    color="inherit" className='bread' href="/strength" >
   Strength
   </Link>
-  <Link  style={functional}    color="inherit"className='bread' href="/" >
+  <Link  style={functional}    color="inherit"className='bread' href="/functional" >
   Functional
   </Link>
 
