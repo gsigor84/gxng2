@@ -1,179 +1,64 @@
 import React from 'react'
 import Grid from '@mui/material/Grid';
-import Chip from '@mui/material/Chip';
+import Link from '@mui/material/Link';
 import Box from '@mui/material/Box';
 
 
 
-const Reps =()=>{
-    return(
-  
-     
-     <Chip label="5 sets, 12-10 reps" abel="Chip Filled" className='chip' />
 
-    )
+
+const LayoutModule = ({chests,backs,shoulders,legs,arms}) => {
+
+   return (
+        <Box sx={{ width: '100%',padding:'5%'}}>
+                  
+                  <Grid container >
+
+
+         <Grid item xs={12} md={12} >
+
+{chests.length > 0 && 
+
+  <Link   href='/dashboard/chest' color="inherit" underline="hover"  > 
+<p  className='subTitle'>Chest {chests.published_at}</p>
+</Link>
 }
 
-
-
-const LayoutModule = ({chests}) => {
-console.log(chests)
-   return (
-        <Box sx={{ width: '100%' }}>
-
-
-{chests.map(function (chest,index) {
-                return(
-                <div key={index}>
-                <Grid container   >
-{chest.upper.bench ?  <>
-                     <Grid item xs={12} md={4} >
-     <span  className='p1'>
-        {chest.upper.bench}
-         </span>
-         </Grid>
-         
-        
-         <Grid item xs={12} md={8} >
-<Reps/>
 </Grid>
-</> : null}
 
-{chest.upper.machine ?  <>
-<Grid item xs={12} md={4} >
-     <span  className='p1'>
-        {chest.upper.machine}
-         </span>
-         </Grid>
-         <Grid item xs={12} md={8} >
-         <Reps/>
-         </Grid>
-         </> : null}
-
-         {chest.upper.fly ?  <>
-         <Grid item xs={12} md={4} >
-         <span  className='p1'>
-        {chest.upper.fly}
-         </span>
-         </Grid>
-         <Grid item xs={12} md={8} >
-         <Reps/>
-         </Grid>
-         </> : null}
-
- {chest.upper.pushups ?  <>
-         <Grid item xs={12} md={4} >
-         <span  className='p1'>
-        {chest.upper.pushups}
-         </span>
-             </Grid>
-         <Grid item xs={12} md={8} >
-         <Reps/>
-        </Grid>
-      
-        </> : null}
-       
-        {chest.middle.bench ?  <>
-        <Grid item xs={12} md={4}  >
-        <span  className='p1'>
-        {chest.middle.bench}
-        </span>
-        </Grid>
-        <Grid item xs={12} md={8} >
-         <Reps/>
-        </Grid>
-        </> : null}
-
-        {chest.middle.machine ?  <>
-
-        <Grid item xs={12} md={4}  >
-         <span  className='p1'>
-        {chest.middle.machine}
-        </span>
-        </Grid>
-        <Grid item xs={12} md={8} >
-         <Reps/>
-        </Grid>
-        </> : null}
-
-        {chest.middle.fly ?  <>
-     
-        <Grid item xs={12} md={4} >
-         <span  className='p1'>
-        {chest.middle.fly}
-        </span>
+<Grid item xs={12} md={12} >
+{backs.length > 0 && 
+  <Link   href='/dashboard/back' color="inherit" underline="hover"  > 
+<p  className='subTitle'>Back</p>
+</Link>
+}
 </Grid>
-<Grid item xs={12} md={8} >
-         <Reps/>
-        </Grid>
-</> : null}
 
-{chest.middle.pushups ?  <>
-        <Grid item xs={12} md={4} >
-         <span  className='p1'>
-        {chest.middle.pushups}
-        </span>
-        </Grid>
-        <Grid item xs={12} md={8} >
-         <Reps/>
-        </Grid>
-        
-        </> : null}
+<Grid item xs={12} md={12} >
+{shoulders.length > 0 &&
+  <Link   href='/dashboard/shoulder' color="inherit" underline="hover"  > 
+<p  className='subTitle'>Shoulders</p>
+</Link>
+}
+</Grid>
 
-        {chest.lower.bench ?  <>
-        <Grid item xs={12} md={4}  >
-        <span  className='p1'>
-        {chest.lower.bench}
-        </span>
-        </Grid>
-        <Grid item xs={12} md={8} >
-         <Reps/>
-        </Grid>
-        </> : null}
-        
-        {chest.lower.machine ?  <>
-        <Grid item xs={12} md={4}  >
-         <span  className='p1'>
-        {chest.lower.machine}
-        </span>
-        </Grid>
-        <Grid item xs={12} md={8} >
-         <Reps/>
-        </Grid>
-        </> : null}
-        
-        {chest.lower.fly ?  <>
-        <Grid item xs={12} md={4}  >
-         <span  className='p1'>
-        {chest.lower.fly}
-        </span>
-         </Grid>
-         <Grid item xs={12} md={8} >
-          <Reps/>
-         </Grid>
-         </> : null}
+<Grid item xs={12} md={12} >
+{legs.length > 0 && 
+  <Link   href='/dashboard/leg' color="inherit" underline="hover"  > 
+<p  className='subTitle'>Legs</p>
+</Link>
+}
+</Grid>
 
-         {chest.lower.pushups ?  <>
-         <Grid item xs={12} md={4}  >
-         <span  className='p1'>
-        {chest.lower.pushups}
-        </span>
-         </Grid>
-         <Grid item xs={12} md={8} >
-          <Reps/>
-         </Grid>
-         </> : null}
+<Grid item xs={12} md={12} >
+{arms.length > 0 && 
+  <Link   href='/dashboard/arm' color="inherit" underline="hover"  > 
+<p  className='subTitle'>Arms</p>
+</Link>
+}
+</Grid>
 
-         
-         </Grid>
-         
-       
-
-         </div>
-
-                )
-})}
-
+</Grid>
         </Box>
   )
 }

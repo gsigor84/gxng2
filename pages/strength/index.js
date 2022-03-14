@@ -6,12 +6,14 @@ import { CardActionArea } from '@mui/material';
 import Grid from '@mui/material/Grid';
 import Link from '@mui/material/Link';
 import Typography from '@mui/material/Typography';
+import Box from '@mui/material/Box';
 
 const index = () => {
   
   return (
-
-    <Grid container spacing={2} sx={{margin:'2%'}}>
+    
+    <Box sx={{ width: '100%',padding:'5%',marginBlock:'5%'}}>
+    <Grid container spacing={2} >
 
 {items.map((muscle,index)=>{  
           return(
@@ -41,7 +43,7 @@ const index = () => {
 )})}
 
 </Grid>
-
+</Box >
   )
 }
 
@@ -55,18 +57,22 @@ const items = [
     {
       img: '/stars/the_rock.jpeg',
       title: 'BACK',
+      link:'/strength/back'
     },
     {
         img: '/stars/panda.jpeg',
         title: 'SHOULDER',
+        link:'/strength/shoulder'
       },
       {
         img: '/stars/John_Cena.jpg',
         title: 'LEGS',
+        link:'/strength/leg'
       },
       {
         img: '/stars/Roman_Reigns.jpg',
         title: 'ARMS',
+        link:'/strength/arm'
       },
 ];
 

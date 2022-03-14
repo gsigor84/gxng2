@@ -8,7 +8,7 @@ import { ToastContainer, toast } from 'react-toastify';
 import {API_URL} from '@/config/index'
 
 
-const LayoutModule = () => {
+const BackModule = () => {
 
 
     const router =useRouter()
@@ -269,4 +269,4 @@ const LayoutModule = () => {
 }
 
 
-export default LayoutModule
+export default BackModule

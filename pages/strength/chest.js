@@ -1,13 +1,13 @@
 import React from 'react'
 import {API_URL} from '@/config/index'
 
-import Exe from 'components/ExeModule/LayoutModule'
+import Chest from 'components/ExeModule/ChestModule'
 
 const chest = () => {
   return (
 
 <>
-<Exe />
+<Chest />
 </>
   )
 }

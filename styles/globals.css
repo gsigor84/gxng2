@@ -103,6 +103,10 @@ padding: 2%;
 }
 
 @media only screen and (max-width: 600px) {
+  .dashg{
+    padding-top: 10%;
+
+  }
  .bread{
   justify-Content: center;
 
