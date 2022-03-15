@@ -50,27 +50,27 @@ const index = () => {
 
 const items = [
     {
-      img: '/stars/Larry-Wheels.jpeg',
+      img: '/muscles/chest.png',
       title: 'CHEST',
       link:'/strength/chest'
     },
     {
-      img: '/stars/the_rock.jpeg',
+      img: '/muscles/back.png',
       title: 'BACK',
       link:'/strength/back'
     },
     {
-        img: '/stars/panda.jpeg',
+        img: '/muscles/shoulders.png',
         title: 'SHOULDER',
         link:'/strength/shoulder'
       },
       {
-        img: '/stars/John_Cena.jpg',
+        img: '/muscles/legs.png',
         title: 'LEGS',
         link:'/strength/leg'
       },
       {
-        img: '/stars/Roman_Reigns.jpg',
+        img: '/muscles/arms.png',
         title: 'ARMS',
         link:'/strength/arm'
       },

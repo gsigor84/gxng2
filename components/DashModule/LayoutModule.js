@@ -2,12 +2,13 @@ import React from 'react'
 import Grid from '@mui/material/Grid';
 import Link from '@mui/material/Link';
 import Box from '@mui/material/Box';
+import functional from 'pages/functional';
 
 
 
 
 
-const LayoutModule = ({chests,backs,shoulders,legs,arms}) => {
+const LayoutModule = ({chests,backs,shoulders,legs,arms,functionals}) => {
 
    return (
         <Box sx={{ width: '100%',padding:'5%'}}>
@@ -54,6 +55,14 @@ const LayoutModule = ({chests,backs,shoulders,legs,arms}) => {
 {arms.length > 0 && 
   <Link   href='/dashboard/arm' color="inherit" underline="hover"  > 
 <p  className='subTitle'>Arms</p>
+</Link>
+}
+</Grid>
+
+<Grid item xs={12} md={12} >
+{functionals.length > 0 && 
+  <Link   href='/dashboard/functional' color="inherit" underline="hover"  > 
+<p  className='subTitle'>Functional</p>
 </Link>
 }
 </Grid>

@@ -10,7 +10,7 @@ const Reps =()=>{
     return(
   
      
-     <Chip label="4 sets, 12-10 reps" abel="Chip Filled" className='chip' />
+     <Chip label="3 sets, 10 reps , rest 1 min" abel="Chip Filled" className='chip' />
 
     )
 }
