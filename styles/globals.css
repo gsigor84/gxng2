@@ -103,6 +103,13 @@ padding: 2%;
 }
 
 @media only screen and (max-width: 600px) {
+  .loader{
+    display: flex;
+  justify-content: center;
+  align-items: center;
+  size:10;
+  color:red;
+  }
   .dashg{
     padding-top: 10%;
 

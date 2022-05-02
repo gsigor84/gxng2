@@ -106,9 +106,11 @@ Router.events.on('routeChangeStart',()=>{
 
 
   return (
-    <>{loading? <ClipLoader  size={150} /> :
+    <>{loading?<div className='loader'><ClipLoader   className='loader' /></div>  :
     (
 <>
+
+
         <ToastContainer/>
     <Box sx={{ width: '100%',padding:'5%'}}>
     <Grid container
