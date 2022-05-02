@@ -1,13 +1,12 @@
 import React from 'react'
 import BackLayout from '../../components/DashModule/BackModule'
 import {API_URL} from '@/config/index'
-import {useState, useEffect} from "react";
-import {Router, useRouter} from "next/router";
+
 
 
 const back = ({backs}) => {
 
-  const router =useRouter()
+
 
 
   return (
