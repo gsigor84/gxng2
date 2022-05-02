@@ -8,7 +8,7 @@ const NavModule = () => {
     <Box>
         <Grid container >
         <Grid item xs={12} md={4} >
-        <p className='logo'>
+        <p className='logo' >
  GXNG
   </p>
   </Grid>

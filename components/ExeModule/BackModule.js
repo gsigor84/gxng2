@@ -2,16 +2,24 @@ import React from 'react'
 import Box from '@mui/material/Box';
 import Grid from '@mui/material/Grid';
 import styles from '../../styles/Button.module.css'
-import {useState} from "react";
-import {useRouter} from "next/router";
+import {useState, useEffect} from "react";
+import {Router, useRouter} from "next/router";
 import { ToastContainer, toast } from 'react-toastify';
 import {API_URL} from '@/config/index'
+import ClipLoader from "react-spinners/ClipLoader";
+
+
+
 
 
 const BackModule = () => {
 
-
+    const [loading,setLoading]=useState(false)
     const router =useRouter()
+
+Router.events.on('routeChangeStart',()=>{
+   setLoading(true)
+})
 
     const [values, setValues]=useState({
         Hammer :'',
@@ -92,20 +100,23 @@ const BackModule = () => {
 
             const dataResponse = await res.json()
         console.log(dataResponse)
+
         router.push(`/dashboard/back`)
         }
 
 
   return (
-    <>
-    <ToastContainer/>
+    <>{loading? <ClipLoader  size={150} /> :
+    (
+<>
+        <ToastContainer/>
     <Box sx={{ width: '100%',padding:'5%'}}>
     <Grid container
     direction="row"
   justifyContent="flex-start"
   alignItems="center"
     sx={{marginRight:'2%',padding:'2%'}}>
-     
+ 
 
                   <form onSubmit={handleData} >
                   <Grid container >
@@ -263,6 +274,12 @@ const BackModule = () => {
     
     </Grid>
     </Box>
+
+     </>
+    )
+   
+    }
+    
     </>
 
   )
